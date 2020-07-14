@@ -13,10 +13,10 @@
 </head>
 <body>
 <h2>商家展示</h2>
-<c:forEach var = "user" items="${list}">
-    ${user.uid}
-    ${user.uname}
-    ${user.usex}
+<c:forEach var = "job" items="${list}">
+    ${job.jid}
+    ${job.jname}
+    ${job.jintro}
 </c:forEach>
 </body>
 </html>

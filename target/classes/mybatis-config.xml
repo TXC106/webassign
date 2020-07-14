@@ -9,5 +9,6 @@
     <mappers>
         <mapper class="com.qz.dao.merMapper"/>
         <mapper class="com.qz.dao.userMapper"/>
+        <mapper class="com.qz.dao.jobMapper"/>
     </mappers>
 </configuration>

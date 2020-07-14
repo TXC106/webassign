@@ -35,7 +35,8 @@ public class userController {
     public String list(Model model) {
         List<User> list = userService.queryAllUser();
         model.addAttribute("list", list);
-        return "alluser";
+        return "allmer";
+//        return "testpage";
     }
     @RequestMapping("/getusers")
     @ResponseBody
