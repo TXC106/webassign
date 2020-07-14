@@ -27,11 +27,18 @@ public class UserServiceImp implements UserService{
         return usermapper.updateUser(m);
     }
 
-    public User queryUserById(int id) {
-        return usermapper.queryUserById(id);
+    public User queryUser(User user) {
+        return usermapper.queryUser(user);
     }
 
     public List<User> queryAllUser() {
         return usermapper.queryAllUser();
+    }
+
+    public int updatePhone(User user) {
+        return usermapper.updatePhone(user);
+    }
+    public int updatePasswd(User user){
+        return usermapper.updatePasswd(user);
     }
 }

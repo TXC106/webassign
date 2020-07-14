@@ -13,7 +13,11 @@ public interface userMapper {
     //修改用户
     int updateUser(User m);
     //查找用户
-    User queryUserById(@Param("uid") int id);
+    User queryUser(User user);
     //查询所有用户
     List<User> queryAllUser();
+    //修改手机
+    int updatePhone(User user);
+    //修改密码
+    int updatePasswd(User user);
 }

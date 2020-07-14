@@ -13,5 +13,6 @@
 <body>
 huanying
 <a href="${pageContext.request.contextPath}/merchant/allmer">进入商家界面</a>
+<a href="${pageContext.request.contextPath}/user/alluser">进入商家界面</a>
 </body>
 </html>

@@ -13,26 +13,14 @@
     </delete>
     <update id="updateUser" parameterType="User">
         update cityTownWeb.user
-        set uname=#{uname},uedu=#{uedu},usex=#{usex},utime=#{utime}
+        set uname=#{uname}
         where uid=#{uid};
     </update>
-    <select id="queryUser" resultType="User">
+    <select id="queryUserById" resultType="User">
         select * from cityTownWeb.user
         where uid=#{uid}
     </select>
     <select id="queryAllUser" resultType="User">
         select * from cityTownWeb.user
     </select>
-    <update id="updatePhone" parameterType="User">
-        update cityTownWeb.user
-        set uphone=#{uphone}
-        where uid=#{uid};
-    </update>
-    <update id="updatePasswd" parameterType="User">
-        update cityTownWeb.user
-        set upassword=#{upassword}
-        where uid=#{uid};
-    </update>
-
-
 </mapper>
